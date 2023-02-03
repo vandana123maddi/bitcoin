@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bitcoin-icon {
+    display: inline-block;
+    text-align: center;
+    padding-top: 50px;
+
+    h1 {
+        width: 250px;
+        height: 250px;
+        background-color: #f7931a;
+        border-radius: 50%;
+        color: #fff;
+        padding: 40px;
+        animation: 2s bitcoin infinite;
+
+        .fa-btc {
+            font-size: 160px;
+            transform: rotateZ(15deg);
+        }
+    }
+}
+
+@keyframes bitcoin {
+    0% {
+        transform: translateY(-5%);
+    }
+    60% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(-5%);
+    }
+}
